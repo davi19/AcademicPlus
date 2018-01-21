@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Syncfusion.Windows.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace AcademicPlus
 {
-    public partial class Form1 : Form
+    public partial class Principal : MetroForm
     {
-        public Form1()
+        public Principal()
         {
             InitializeComponent();
         }
