@@ -112,7 +112,7 @@
             // 
             // TabPrincipal
             // 
-            this.TabPrincipal.ActiveTabColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.TabPrincipal.ActiveTabColor = System.Drawing.Color.Teal;
             this.TabPrincipal.ActiveTabForeColor = System.Drawing.Color.Empty;
             this.TabPrincipal.BeforeTouchSize = new System.Drawing.Size(844, 446);
             this.TabPrincipal.CloseButtonForeColor = System.Drawing.Color.Empty;
@@ -124,6 +124,7 @@
             this.TabPrincipal.Controls.Add(this.tabPageAdv4);
             this.TabPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TabPrincipal.FocusOnTabClick = false;
+            this.TabPrincipal.InactiveTabColor = System.Drawing.Color.White;
             this.TabPrincipal.InActiveTabForeColor = System.Drawing.Color.Empty;
             this.TabPrincipal.Location = new System.Drawing.Point(0, 0);
             this.TabPrincipal.Name = "TabPrincipal";
@@ -176,7 +177,8 @@
             // 
             this.TextCpf.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.TextCpf.BeforeTouchSize = new System.Drawing.Size(432, 20);
+            this.TextCpf.BeforeTouchSize = new System.Drawing.Size(264, 20);
+            this.TextCpf.FocusBorderColor = System.Drawing.Color.Teal;
             this.TextCpf.Location = new System.Drawing.Point(577, 33);
             this.TextCpf.Mask = "999.999.999-99";
             this.TextCpf.MaxLength = 14;
@@ -205,7 +207,7 @@
             this.BtnBuscarAluno.ForeColor = System.Drawing.Color.Black;
             this.BtnBuscarAluno.IsBackStageButton = false;
             this.BtnBuscarAluno.Location = new System.Drawing.Point(554, 230);
-            this.BtnBuscarAluno.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnBuscarAluno.MetroColor = System.Drawing.Color.Teal;
             this.BtnBuscarAluno.Name = "BtnBuscarAluno";
             this.BtnBuscarAluno.Size = new System.Drawing.Size(123, 23);
             this.BtnBuscarAluno.TabIndex = 23;
@@ -220,8 +222,8 @@
             this.BtnExcluirAluno.BeforeTouchSize = new System.Drawing.Size(75, 23);
             this.BtnExcluirAluno.ForeColor = System.Drawing.Color.Black;
             this.BtnExcluirAluno.IsBackStageButton = false;
-            this.BtnExcluirAluno.Location = new System.Drawing.Point(673, 411);
-            this.BtnExcluirAluno.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnExcluirAluno.Location = new System.Drawing.Point(673, 389);
+            this.BtnExcluirAluno.MetroColor = System.Drawing.Color.Teal;
             this.BtnExcluirAluno.Name = "BtnExcluirAluno";
             this.BtnExcluirAluno.Size = new System.Drawing.Size(75, 23);
             this.BtnExcluirAluno.TabIndex = 22;
@@ -236,8 +238,8 @@
             this.BtnCadastrar.BeforeTouchSize = new System.Drawing.Size(75, 23);
             this.BtnCadastrar.ForeColor = System.Drawing.Color.Black;
             this.BtnCadastrar.IsBackStageButton = false;
-            this.BtnCadastrar.Location = new System.Drawing.Point(754, 411);
-            this.BtnCadastrar.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnCadastrar.Location = new System.Drawing.Point(754, 389);
+            this.BtnCadastrar.MetroColor = System.Drawing.Color.Teal;
             this.BtnCadastrar.Name = "BtnCadastrar";
             this.BtnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.BtnCadastrar.TabIndex = 21;
@@ -248,7 +250,8 @@
             // 
             this.TextValorPagamento.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.TextValorPagamento.BeforeTouchSize = new System.Drawing.Size(432, 20);
+            this.TextValorPagamento.BeforeTouchSize = new System.Drawing.Size(264, 20);
+            this.TextValorPagamento.FocusBorderColor = System.Drawing.Color.Teal;
             this.TextValorPagamento.Location = new System.Drawing.Point(411, 231);
             this.TextValorPagamento.Mask = "999,99";
             this.TextValorPagamento.MaxLength = 6;
@@ -291,6 +294,7 @@
             this.ComboTipoPagamento.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat;
             this.ComboTipoPagamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboTipoPagamento.Location = new System.Drawing.Point(210, 230);
+            this.ComboTipoPagamento.MetroColor = System.Drawing.Color.Teal;
             this.ComboTipoPagamento.Name = "ComboTipoPagamento";
             this.ComboTipoPagamento.Size = new System.Drawing.Size(195, 21);
             this.ComboTipoPagamento.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
@@ -319,6 +323,7 @@
             this.ComboFrequencia.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat;
             this.ComboFrequencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboFrequencia.Location = new System.Drawing.Point(9, 230);
+            this.ComboFrequencia.MetroColor = System.Drawing.Color.Teal;
             this.ComboFrequencia.Name = "ComboFrequencia";
             this.ComboFrequencia.Size = new System.Drawing.Size(195, 21);
             this.ComboFrequencia.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
@@ -340,9 +345,10 @@
             // 
             // textBoxExt2
             // 
-            this.textBoxExt2.BeforeTouchSize = new System.Drawing.Size(432, 20);
+            this.textBoxExt2.BeforeTouchSize = new System.Drawing.Size(264, 20);
             this.textBoxExt2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.textBoxExt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxExt2.FocusBorderColor = System.Drawing.Color.Teal;
             this.textBoxExt2.Location = new System.Drawing.Point(9, 118);
             this.textBoxExt2.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.textBoxExt2.Multiline = true;
@@ -355,7 +361,8 @@
             // 
             this.TextTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.TextTelefone.BeforeTouchSize = new System.Drawing.Size(432, 20);
+            this.TextTelefone.BeforeTouchSize = new System.Drawing.Size(264, 20);
+            this.TextTelefone.FocusBorderColor = System.Drawing.Color.Teal;
             this.TextTelefone.Location = new System.Drawing.Point(447, 34);
             this.TextTelefone.Mask = "(99)99999-9999";
             this.TextTelefone.MaxLength = 14;
@@ -393,9 +400,10 @@
             // 
             this.TextCidade.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.TextCidade.BeforeTouchSize = new System.Drawing.Size(432, 20);
+            this.TextCidade.BeforeTouchSize = new System.Drawing.Size(264, 20);
             this.TextCidade.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.TextCidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextCidade.FocusBorderColor = System.Drawing.Color.Teal;
             this.TextCidade.Location = new System.Drawing.Point(703, 77);
             this.TextCidade.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.TextCidade.Name = "TextCidade";
@@ -420,9 +428,10 @@
             // 
             this.textBoxExt1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBoxExt1.BeforeTouchSize = new System.Drawing.Size(432, 20);
+            this.textBoxExt1.BeforeTouchSize = new System.Drawing.Size(264, 20);
             this.textBoxExt1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.textBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxExt1.FocusBorderColor = System.Drawing.Color.Teal;
             this.textBoxExt1.Location = new System.Drawing.Point(525, 77);
             this.textBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.textBoxExt1.Name = "textBoxExt1";
@@ -447,7 +456,7 @@
             // 
             this.TextNumero.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.TextNumero.BeforeTouchSize = new System.Drawing.Size(432, 20);
+            this.TextNumero.BeforeTouchSize = new System.Drawing.Size(264, 20);
             this.TextNumero.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.TextNumero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TextNumero.Location = new System.Drawing.Point(447, 77);
@@ -474,9 +483,10 @@
             // 
             this.TextRua.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.TextRua.BeforeTouchSize = new System.Drawing.Size(432, 20);
+            this.TextRua.BeforeTouchSize = new System.Drawing.Size(264, 20);
             this.TextRua.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.TextRua.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextRua.FocusBorderColor = System.Drawing.Color.Teal;
             this.TextRua.Location = new System.Drawing.Point(9, 77);
             this.TextRua.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.TextRua.Name = "TextRua";
@@ -501,9 +511,10 @@
             // 
             this.TextNome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.TextNome.BeforeTouchSize = new System.Drawing.Size(432, 20);
+            this.TextNome.BeforeTouchSize = new System.Drawing.Size(264, 20);
             this.TextNome.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.TextNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextNome.FocusBorderColor = System.Drawing.Color.Teal;
             this.TextNome.Location = new System.Drawing.Point(9, 35);
             this.TextNome.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.TextNome.Name = "TextNome";
@@ -554,6 +565,7 @@
             this.ComboMetodoPagamento.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat;
             this.ComboMetodoPagamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboMetodoPagamento.Location = new System.Drawing.Point(9, 122);
+            this.ComboMetodoPagamento.MetroColor = System.Drawing.Color.Teal;
             this.ComboMetodoPagamento.Name = "ComboMetodoPagamento";
             this.ComboMetodoPagamento.Size = new System.Drawing.Size(190, 21);
             this.ComboMetodoPagamento.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
@@ -578,12 +590,13 @@
             this.DataPagamento.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat;
             this.DataPagamento.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.DataPagamento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DataPagamento.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DataPagamento.CalendarSize = new System.Drawing.Size(189, 176);
             this.DataPagamento.Culture = new System.Globalization.CultureInfo("pt-BR");
             this.DataPagamento.DropDownImage = null;
-            this.DataPagamento.DropDownNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.DataPagamento.DropDownPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.DataPagamento.DropDownSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(255)))), ((int)(((byte)(206)))));
+            this.DataPagamento.DropDownNormalColor = System.Drawing.Color.Teal;
+            this.DataPagamento.DropDownPressedColor = System.Drawing.Color.Teal;
+            this.DataPagamento.DropDownSelectedColor = System.Drawing.Color.Teal;
             this.DataPagamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DataPagamento.Location = new System.Drawing.Point(205, 123);
             this.DataPagamento.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -603,7 +616,7 @@
             this.BtnLancaPagamento.ForeColor = System.Drawing.Color.Black;
             this.BtnLancaPagamento.IsBackStageButton = false;
             this.BtnLancaPagamento.Location = new System.Drawing.Point(447, 123);
-            this.BtnLancaPagamento.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnLancaPagamento.MetroColor = System.Drawing.Color.Teal;
             this.BtnLancaPagamento.Name = "BtnLancaPagamento";
             this.BtnLancaPagamento.Size = new System.Drawing.Size(123, 23);
             this.BtnLancaPagamento.TabIndex = 26;
@@ -629,7 +642,7 @@
             this.BtnBuscarAlunoPagamento.ForeColor = System.Drawing.Color.Black;
             this.BtnBuscarAlunoPagamento.IsBackStageButton = false;
             this.BtnBuscarAlunoPagamento.Location = new System.Drawing.Point(447, 31);
-            this.BtnBuscarAlunoPagamento.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnBuscarAlunoPagamento.MetroColor = System.Drawing.Color.Teal;
             this.BtnBuscarAlunoPagamento.Name = "BtnBuscarAlunoPagamento";
             this.BtnBuscarAlunoPagamento.Size = new System.Drawing.Size(123, 23);
             this.BtnBuscarAlunoPagamento.TabIndex = 24;
@@ -653,9 +666,10 @@
             // 
             this.TextNomePagamento.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.TextNomePagamento.BeforeTouchSize = new System.Drawing.Size(432, 20);
+            this.TextNomePagamento.BeforeTouchSize = new System.Drawing.Size(264, 20);
             this.TextNomePagamento.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.TextNomePagamento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextNomePagamento.FocusBorderColor = System.Drawing.Color.Teal;
             this.TextNomePagamento.Location = new System.Drawing.Point(9, 31);
             this.TextNomePagamento.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.TextNomePagamento.Name = "TextNomePagamento";
@@ -689,7 +703,7 @@
             this.BtnExcel.ForeColor = System.Drawing.Color.Black;
             this.BtnExcel.IsBackStageButton = false;
             this.BtnExcel.Location = new System.Drawing.Point(389, 24);
-            this.BtnExcel.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnExcel.MetroColor = System.Drawing.Color.Teal;
             this.BtnExcel.Name = "BtnExcel";
             this.BtnExcel.Size = new System.Drawing.Size(123, 23);
             this.BtnExcel.TabIndex = 35;
@@ -704,7 +718,7 @@
             this.BtnPdf.ForeColor = System.Drawing.Color.Black;
             this.BtnPdf.IsBackStageButton = false;
             this.BtnPdf.Location = new System.Drawing.Point(518, 24);
-            this.BtnPdf.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnPdf.MetroColor = System.Drawing.Color.Teal;
             this.BtnPdf.Name = "BtnPdf";
             this.BtnPdf.Size = new System.Drawing.Size(123, 23);
             this.BtnPdf.TabIndex = 34;
@@ -733,6 +747,7 @@
             this.ComboRelatorio.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat;
             this.ComboRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboRelatorio.Location = new System.Drawing.Point(9, 24);
+            this.ComboRelatorio.MetroColor = System.Drawing.Color.Teal;
             this.ComboRelatorio.Name = "ComboRelatorio";
             this.ComboRelatorio.Size = new System.Drawing.Size(245, 21);
             this.ComboRelatorio.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
@@ -747,7 +762,7 @@
             this.BtnGerarRelatorio.ForeColor = System.Drawing.Color.Black;
             this.BtnGerarRelatorio.IsBackStageButton = false;
             this.BtnGerarRelatorio.Location = new System.Drawing.Point(260, 24);
-            this.BtnGerarRelatorio.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnGerarRelatorio.MetroColor = System.Drawing.Color.Teal;
             this.BtnGerarRelatorio.Name = "BtnGerarRelatorio";
             this.BtnGerarRelatorio.Size = new System.Drawing.Size(123, 23);
             this.BtnGerarRelatorio.TabIndex = 31;

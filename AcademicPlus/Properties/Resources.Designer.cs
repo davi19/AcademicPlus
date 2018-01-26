@@ -63,6 +63,16 @@ namespace AcademicPlus.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_form_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-form-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IMG_20150502_WA0002 {
             get {
                 object obj = ResourceManager.GetObject("IMG-20150502-WA0002", resourceCulture);

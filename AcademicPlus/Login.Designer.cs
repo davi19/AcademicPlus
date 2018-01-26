@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.autoLabel2 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.TextRua = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.TextSenha = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel1 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.TextNome = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.TextUsuario = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.BtnEntrar = new Syncfusion.Windows.Forms.ButtonAdv();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.TextRua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TextNome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextSenha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +46,7 @@
             this.autoLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.autoLabel2.DY = -17;
-            this.autoLabel2.LabeledControl = this.TextRua;
+            this.autoLabel2.LabeledControl = this.TextSenha;
             this.autoLabel2.Location = new System.Drawing.Point(12, 242);
             this.autoLabel2.Name = "autoLabel2";
             this.autoLabel2.Position = Syncfusion.Windows.Forms.Tools.AutoLabelPosition.Top;
@@ -54,26 +54,29 @@
             this.autoLabel2.TabIndex = 7;
             this.autoLabel2.Text = "Senha";
             // 
-            // TextRua
+            // TextSenha
             // 
-            this.TextRua.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TextSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.TextRua.BeforeTouchSize = new System.Drawing.Size(264, 20);
-            this.TextRua.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.TextRua.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextRua.Location = new System.Drawing.Point(12, 259);
-            this.TextRua.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.TextRua.Name = "TextRua";
-            this.TextRua.Size = new System.Drawing.Size(264, 20);
-            this.TextRua.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
-            this.TextRua.TabIndex = 6;
+            this.TextSenha.BeforeTouchSize = new System.Drawing.Size(264, 20);
+            this.TextSenha.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.TextSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextSenha.FocusBorderColor = System.Drawing.Color.Teal;
+            this.TextSenha.Location = new System.Drawing.Point(12, 259);
+            this.TextSenha.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.TextSenha.Name = "TextSenha";
+            this.TextSenha.PasswordChar = '*';
+            this.TextSenha.Size = new System.Drawing.Size(264, 20);
+            this.TextSenha.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
+            this.TextSenha.TabIndex = 6;
+            this.TextSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextSenha_KeyPress);
             // 
             // autoLabel1
             // 
             this.autoLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.autoLabel1.DY = -17;
-            this.autoLabel1.LabeledControl = this.TextNome;
+            this.autoLabel1.LabeledControl = this.TextUsuario;
             this.autoLabel1.Location = new System.Drawing.Point(12, 200);
             this.autoLabel1.Name = "autoLabel1";
             this.autoLabel1.Position = Syncfusion.Windows.Forms.Tools.AutoLabelPosition.Top;
@@ -81,19 +84,21 @@
             this.autoLabel1.TabIndex = 5;
             this.autoLabel1.Text = "Usuário";
             // 
-            // TextNome
+            // TextUsuario
             // 
-            this.TextNome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TextUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.TextNome.BeforeTouchSize = new System.Drawing.Size(264, 20);
-            this.TextNome.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.TextNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextNome.Location = new System.Drawing.Point(12, 217);
-            this.TextNome.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.TextNome.Name = "TextNome";
-            this.TextNome.Size = new System.Drawing.Size(264, 20);
-            this.TextNome.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
-            this.TextNome.TabIndex = 4;
+            this.TextUsuario.BeforeTouchSize = new System.Drawing.Size(264, 20);
+            this.TextUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.TextUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.TextUsuario.FocusBorderColor = System.Drawing.Color.Teal;
+            this.TextUsuario.Location = new System.Drawing.Point(12, 217);
+            this.TextUsuario.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.TextUsuario.Name = "TextUsuario";
+            this.TextUsuario.Size = new System.Drawing.Size(264, 20);
+            this.TextUsuario.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
+            this.TextUsuario.TabIndex = 4;
             // 
             // BtnEntrar
             // 
@@ -103,7 +108,7 @@
             this.BtnEntrar.ForeColor = System.Drawing.Color.Black;
             this.BtnEntrar.IsBackStageButton = false;
             this.BtnEntrar.Location = new System.Drawing.Point(75, 285);
-            this.BtnEntrar.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnEntrar.MetroColor = System.Drawing.Color.Teal;
             this.BtnEntrar.Name = "BtnEntrar";
             this.BtnEntrar.Size = new System.Drawing.Size(123, 23);
             this.BtnEntrar.TabIndex = 24;
@@ -129,17 +134,17 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnEntrar);
             this.Controls.Add(this.autoLabel2);
-            this.Controls.Add(this.TextRua);
+            this.Controls.Add(this.TextSenha);
             this.Controls.Add(this.autoLabel1);
-            this.Controls.Add(this.TextNome);
+            this.Controls.Add(this.TextUsuario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Name = "Login";
             this.ShowMaximizeBox = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)(this.TextRua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TextNome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextSenha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextUsuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -149,9 +154,9 @@
         #endregion
 
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel2;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt TextRua;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt TextSenha;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel1;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt TextNome;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt TextUsuario;
         private Syncfusion.Windows.Forms.ButtonAdv BtnEntrar;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

@@ -20,9 +20,38 @@ namespace AcademicPlus
 
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
-            Principal Cadastro = new Principal();
-            Cadastro.Show();
-            this.Hide();
+            if (TextUsuario.Text.Length == 0)
+            {
+                MessageBox.Show("Favor informar um usuário!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (TextSenha.Text.Length == 0)
+            {
+                MessageBox.Show("Favor informar uma senha!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+
+                var Query = new QueryMysql();
+                var Resultado = Query.Login(TextUsuario.Text, TextSenha.Text);
+                if (Resultado)
+                {
+                    Principal Cadastro = new Principal();
+                    Cadastro.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Usuário ou senha incorretos!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void TextSenha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                BtnEntrar_Click(sender,e);
+            }
         }
     }
 }
