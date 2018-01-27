@@ -19,7 +19,7 @@ namespace AcademicPlus
             var Tabela = new DataTable();
             Leitor.Fill(Tabela);
             Conexao.Close();
-            if (Tabela.Rows.Count > 0)
+            if (Convert.ToInt32(Tabela.Rows[0][0])> 0)
             {
                 return true;
             }
