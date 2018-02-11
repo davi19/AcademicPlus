@@ -108,7 +108,7 @@
             this.BtnEntrar.ForeColor = System.Drawing.Color.Black;
             this.BtnEntrar.IsBackStageButton = false;
             this.BtnEntrar.Location = new System.Drawing.Point(75, 285);
-            this.BtnEntrar.MetroColor = System.Drawing.Color.Teal;
+            this.BtnEntrar.MetroColor = System.Drawing.SystemColors.MenuHighlight;
             this.BtnEntrar.Name = "BtnEntrar";
             this.BtnEntrar.Size = new System.Drawing.Size(123, 23);
             this.BtnEntrar.TabIndex = 24;
@@ -138,7 +138,7 @@
             this.Controls.Add(this.autoLabel1);
             this.Controls.Add(this.TextUsuario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.MetroColor = System.Drawing.SystemColors.MenuHighlight;
             this.Name = "Login";
             this.ShowMaximizeBox = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

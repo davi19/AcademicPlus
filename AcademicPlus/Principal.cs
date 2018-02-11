@@ -17,5 +17,35 @@ namespace AcademicPlus
         {
             InitializeComponent();
         }
+
+        private void alunoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Alunos aluno = new Alunos();
+            aluno.ShowDialog();
+        }
+
+        private void pagamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pagamentos Pagamento = new Pagamentos();
+            Pagamento.ShowDialog();
+        }
+
+        private void ajudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sobre sobre = new Sobre();
+            sobre.ShowDialog();
+        }
+
+        private void usuárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Usuarios Usuario = new Usuarios();
+            Usuario.ShowDialog();
+        }
+
+        private void relaçãoDeAlunosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Relatorio relatorio = new Relatorio("Aluno");
+            relatorio.ShowDialog();
+        }
     }
 }
