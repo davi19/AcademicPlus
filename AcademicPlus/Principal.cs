@@ -47,5 +47,13 @@ namespace AcademicPlus
             Relatorio relatorio = new Relatorio("Aluno");
             relatorio.ShowDialog();
         }
+
+        private void pagamentosPeriodoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PeriodoRelatorio periodo= new PeriodoRelatorio();
+            periodo.ShowDialog();
+            Relatorio relatorio = new Relatorio("PagamentoTotal");
+            relatorio.ShowDialog();
+        }
     }
 }

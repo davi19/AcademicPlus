@@ -12,6 +12,9 @@ namespace AcademicPlus
         private static string IdAluno = "";
         private static string IdUsuario = "";
         private static string IdPagamento = "";
+        private static string DataInicial ="";
+        private static string DataFinal = "";
+
         MySqlConnection Conexao = new MySqlConnection("Server=localhost; Database=academicplus;Uid=root;Pwd=chinchila@acida12244819");
 
         public bool Login(string Usuario, string Senha)
@@ -220,7 +223,38 @@ namespace AcademicPlus
             Conexao.Close();
             return Tabela;
         }
+        public string GetDataInicial()
+        {
+            return DataInicial;
+        }
+        public void SetDataInicial(string Data)
+        {
+            DataInicial = Data;
+        }
+        public string GetDataFinal()
+        {
+            return DataFinal;
+        }
+        public void SetDataFinal(string Data)
+        {
+            DataFinal = Data;
+        }
 
 
+        public DataTable RetornaPagamentoTotal(string DataIncial,string DataFinal)
+        {
+            try
+            {
+                Conexao.Open();
+            }
+            catch { }
+
+            var Comando = new MySqlCommand("SELECT a.nome as nomealuno,replace(a.cpf,',','.') as cpf,DATE_FORMAT(b.datapagamento, '%d/%m/%y')as datapagamento,b.valorpagamento FROM alunos a, pagamentos b WHERE a.id=b.idaluno and b.excluido='N' and b.datapagamento between '" + DataInicial+"' AND '"+DataFinal+"'", Conexao);
+            var Adapter = new MySqlDataAdapter(Comando);
+            var Tabela = new DataTable();
+            Adapter.Fill(Tabela);
+            Conexao.Close();
+            return Tabela;
+        }
     }
 }

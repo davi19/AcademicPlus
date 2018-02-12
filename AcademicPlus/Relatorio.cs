@@ -35,6 +35,24 @@ namespace AcademicPlus
 
                 reportViewer1.RefreshReport();
             }
+            else if (Relatorio.Equals("PagamentoTotal"))
+            {
+                reportViewer1.ProcessingMode = (ProcessingMode)Microsoft.Reporting.WebForms.ProcessingMode.Local;
+
+                LocalReport localReport = reportViewer1.LocalReport;
+
+                localReport.ReportPath = "Pagamentototal.rdlc";
+                var DataInicial = Dados.GetDataInicial();
+                var DataFinal = Dados.GetDataFinal();
+                var PagamentosTotal = Dados.RetornaPagamentoTotal(DataInicial,DataFinal);
+                var data = new ReportDataSource("pagamentototal", PagamentosTotal);
+                ReportParameter dataInicio = new ReportParameter("datainicio",Convert.ToDateTime(DataInicial).ToString("dd/MM/yyyy"));
+                ReportParameter dataFim = new ReportParameter("datafim", Convert.ToDateTime(DataFinal).ToString("dd/MM/yyyy"));
+                reportViewer1.LocalReport.SetParameters(new ReportParameter[]{dataInicio,dataFim});
+                reportViewer1.LocalReport.DataSources.Add(data);
+
+                reportViewer1.RefreshReport();
+            }
         }
 
         private void Relatorio_Load(object sender, EventArgs e)

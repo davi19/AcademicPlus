@@ -42,7 +42,6 @@
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relaçãoDeAlunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pagamentosPeriodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pagamentosAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.ComboTipoPagamento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboFrequencia)).BeginInit();
@@ -166,8 +165,7 @@
             // 
             this.relatóriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.relaçãoDeAlunosToolStripMenuItem,
-            this.pagamentosPeriodoToolStripMenuItem,
-            this.pagamentosAlunoToolStripMenuItem});
+            this.pagamentosPeriodoToolStripMenuItem});
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
             this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
@@ -184,12 +182,7 @@
             this.pagamentosPeriodoToolStripMenuItem.Name = "pagamentosPeriodoToolStripMenuItem";
             this.pagamentosPeriodoToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.pagamentosPeriodoToolStripMenuItem.Text = "Pagamentos Período";
-            // 
-            // pagamentosAlunoToolStripMenuItem
-            // 
-            this.pagamentosAlunoToolStripMenuItem.Name = "pagamentosAlunoToolStripMenuItem";
-            this.pagamentosAlunoToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.pagamentosAlunoToolStripMenuItem.Text = "Pagamentos Aluno";
+            this.pagamentosPeriodoToolStripMenuItem.Click += new System.EventHandler(this.pagamentosPeriodoToolStripMenuItem_Click);
             // 
             // ajudaToolStripMenuItem
             // 
@@ -238,7 +231,6 @@
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relaçãoDeAlunosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pagamentosPeriodoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pagamentosAlunoToolStripMenuItem;
     }
 }
 

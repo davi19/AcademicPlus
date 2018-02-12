@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PagamentoTotal" targetNamespace="http://tempuri.org/PagamentoTotal.xsd" xmlns:mstns="http://tempuri.org/PagamentoTotal.xsd" xmlns="http://tempuri.org/PagamentoTotal.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PagamentoTotal" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PagamentoTotal" msprop:Generator_UserDSName="PagamentoTotal">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="pagamentos" msprop:Generator_TableClassName="pagamentosDataTable" msprop:Generator_TableVarName="tablepagamentos" msprop:Generator_TablePropName="pagamentos" msprop:Generator_RowDeletingName="pagamentosRowDeleting" msprop:Generator_RowChangingName="pagamentosRowChanging" msprop:Generator_RowEvHandlerName="pagamentosRowChangeEventHandler" msprop:Generator_RowDeletedName="pagamentosRowDeleted" msprop:Generator_UserTableName="pagamentos" msprop:Generator_RowChangedName="pagamentosRowChanged" msprop:Generator_RowEvArgName="pagamentosRowChangeEvent" msprop:Generator_RowClassName="pagamentosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nomealuno" msprop:Generator_ColumnVarNameInTable="columnnomealuno" msprop:Generator_ColumnPropNameInRow="nomealuno" msprop:Generator_ColumnPropNameInTable="nomealunoColumn" msprop:Generator_UserColumnName="nomealuno" type="xs:string" minOccurs="0" />
+              <xs:element name="cpf" msprop:Generator_ColumnVarNameInTable="columncpf" msprop:Generator_ColumnPropNameInRow="cpf" msprop:Generator_ColumnPropNameInTable="cpfColumn" msprop:Generator_UserColumnName="cpf" type="xs:string" minOccurs="0" />
+              <xs:element name="datapagamento" msprop:Generator_ColumnVarNameInTable="columndatapagamento" msprop:Generator_ColumnPropNameInRow="datapagamento" msprop:Generator_ColumnPropNameInTable="datapagamentoColumn" msprop:Generator_UserColumnName="datapagamento" type="xs:string" minOccurs="0" />
+              <xs:element name="valorpagamento" msprop:Generator_ColumnVarNameInTable="columnvalorpagamento" msprop:Generator_ColumnPropNameInRow="valorpagamento" msprop:Generator_ColumnPropNameInTable="valorpagamentoColumn" msprop:Generator_UserColumnName="valorpagamento" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
